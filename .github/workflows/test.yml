@@ -1,0 +1,9 @@
+name: Test Workflow
+on: [push, pull_request, workflow_call]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: return 0
